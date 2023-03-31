@@ -97,9 +97,39 @@ body {
 @media (max-width: 870px) {
     .toggle_navbar_button {
         display: flex;
+        cursor: pointer;
     }
 
-    .navbar {
+    .navbar.unclicked {
+        display: none;
+    }
+
+    .navbar.clicked {
+        display: flex;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header .logo {
+        justify-content: start;
+    }
+
+    .header .navbar ul {
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        line-height: 1.8rem;
+        font-size: 18px;
+        right: 1.2rem;
+    }
+
+    .phone_number {
+        display: none;
+    }
+
+    .separator {
         display: none;
     }
 
