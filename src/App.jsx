@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
+import AboutMe from "./AboutMe";
 
 
 export default function App() {
   return(
-    <div>
-      <div className="bg_image">
+    <div className="main">
+      <div className="navbar_and_hero">
         <Navbar />
         <div className="hero_section">
           <h1>Hi, I am <span>Daut Sadykov</span></h1>
@@ -17,7 +18,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      
+      <AboutMe />
     </div>
   )
 }
