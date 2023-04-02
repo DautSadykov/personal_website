@@ -17,11 +17,12 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: repeat(12, 1fr);
     padding: 20px 20px;
 }
 
 .header > .logo {
+    grid-column: 1 / 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +41,10 @@ body {
 
 .header > .logo > h1 > span {
     color: #fec544;
+}
+
+.header > .navbar {
+    grid-column: 3 / -1;
 }
 
 .header > .navbar > ul {
@@ -87,7 +92,7 @@ body {
     justify-content: space-between;
 }
 
-.toggle_navbar_button span {
+.toggle_navbar_button .bar {
     height: 3px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -95,17 +100,17 @@ body {
 }
 
 @media (max-width: 870px) {
-    .toggle_navbar_button {
-        display: flex;
-        cursor: pointer;
-    }
-
     .navbar.unclicked {
         display: none;
     }
 
     .navbar.clicked {
         display: flex;
+    }
+
+    .toggle_navbar_button {
+        display: flex;
+        cursor: pointer;
     }
 
     .header {

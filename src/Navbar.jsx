@@ -8,10 +8,8 @@ export default function Navbar() {
         setIsBurgerClicked ((prevIsBurgerClicked) => !prevIsBurgerClicked)
     }
 
-    function hideBurger() {
-        if (windowWidth > 870) {
-            setIsBurgerClicked(false)
-        }
+    function hideNavbarDropdown() {
+        setIsBurgerClicked(false)
     }
 
     function handleResize() {
@@ -20,13 +18,11 @@ export default function Navbar() {
 
     useEffect(() => {
         window.addEventListener("resize", handleResize)
-        hideBurger()
+        windowWidth > 870 && hideNavbarDropdown()
         return() => {
             window.removeEventListener("resize", handleResize)
         }
     })
-
-    // console.log(isBurgerClicked)
 
     return(
         <div className="header">
@@ -36,7 +32,8 @@ export default function Navbar() {
             <div onClick={handleToggleNavbar} className="toggle_navbar_button">
                 <span className="bar"></span>
                 <span className="bar"></span>
-                <span className="bar"></span> 
+                <span className="bar"></span>
+                {/* <img src="cross.png" alt="" /> */}
             </div>
             <nav className={`navbar ${isBurgerClicked ? 'clicked' : 'unclicked'}`}>
                 <ul>
