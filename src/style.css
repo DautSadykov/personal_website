@@ -228,12 +228,13 @@ body {
 
 .photo_and_description {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 500px;
     grid-gap: 40px;
     padding: 60px;
     align-items: center;
-    justify-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .portrait_photo {
@@ -244,8 +245,9 @@ body {
 }
 
 .profile_description {
-    max-width: 100%;
+    width: 80%;
     padding-top: 10px;
+    justify-self: center;
 }
 
 .photo_and_description h1 {
@@ -266,6 +268,7 @@ body {
     height: 50px;
     width: 180px;
     background-color: #fec544;
+    color: #0d1b2a;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
