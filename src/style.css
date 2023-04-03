@@ -228,7 +228,7 @@ body {
 
 .photo_and_description {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-auto-rows: 500px;
     grid-gap: 40px;
     padding: 60px;
@@ -237,16 +237,15 @@ body {
 }
 
 .portrait_photo {
-    /* max-width: 400px; */
     max-height: 100%;
-    /* width: 100%; */
     object-fit: cover;
     justify-self: center;
-    padding: 0 40px;
+    padding: 40px;
 }
 
 .profile_description {
     max-width: 100%;
+    padding-top: 10px;
 }
 
 .photo_and_description h1 {
