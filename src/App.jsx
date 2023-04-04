@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
-
+import Portfolios from "./PortfolioSection";
 
 export default function App() {
   return(
@@ -19,6 +19,7 @@ export default function App() {
         </div>
       </div>
       <AboutMe />
+      <Portfolios />
     </div>
   )
 }
