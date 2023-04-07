@@ -14,7 +14,13 @@ export default function PortfolioSection() {
   
     return (
     <div className='portfolio_section'>
-      <h1>PORTFOLIOS</h1>
+      <div className="porfolios_title">
+        <h1>PORTFOLIOS</h1>
+        <div className="big_underline">
+            <div className="small_underline"></div>
+        </div>
+      </div>
+      
       <div className="portfolio_elements">
         {portfolioElements}
       </div>

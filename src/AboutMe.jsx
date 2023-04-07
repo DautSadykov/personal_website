@@ -6,8 +6,8 @@ export default function
     <div className="about_me_section">
         <div className="about_me_title">
             <h1>ABOUT ME</h1>
-            <div className="about_me_big_underline">
-                <div className="about_me_small_underline"></div>
+            <div className="big_underline">
+                <div className="small_underline"></div>
             </div>
         </div>
         <div className="photo_and_description">
