@@ -17,7 +17,7 @@ export default [
         id: 2,
         name: "memeGenerator",
         title: "Meme Generator",
-        image: "portfolio_meme.png",
+        image: "portfolio_meme.svg",
         link: "https://dauts-meme-generator.netlify.app",
     },
     {

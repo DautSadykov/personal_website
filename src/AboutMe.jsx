@@ -13,7 +13,7 @@ export default function
         <div className="photo_and_description">
             <img src="portrait.png" alt="" className="portrait_photo" />
             <div className="profile_description">
-                <h1>Hi There! I'm Daut Sadykov</h1>
+                <h1>Hi There!<br/> I'm Daut Sadykov</h1>
                 <h2>Front-end Web-Developer</h2>
                 <p>I am a Visual Designer with a strong focus on digital branding. Visul design seeks to attract, inspire, 
                 create desires and motivate people to respond to messages, with a view to making a favorable impact.<br/><br/>

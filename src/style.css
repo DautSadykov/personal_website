@@ -275,6 +275,7 @@ body {
 
 .photo_and_description p {
     color: #a9adb8;
+    line-height: 1.3em;
 }
 
 .photo_and_description button {
@@ -337,7 +338,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #fdfeff;
+    background-color: #a9adb8;
 }
 
 .portfolio_element {
